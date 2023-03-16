@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra ký tự trong chuỗi</title>
+</head>
+<body>
+    <h1>Kiểm tra ký tự trong chuỗi</h1>
+	<label>Nhập chuỗi:</label>
+	<input type="text" id="str"><br><br>
+	<label>Nhập ký tự cần kiểm tra:</label>
+	<input type="text" id="char"><br><br>
+	<button onclick="kiemTraKyTu()">Kiểm tra</button>
+</body>
+<script>
+    function kiemTraKyTu() {
+			var str = document.getElementById("str").value;
+			var char = document.getElementById("char").value;
+
+			if (str.length >= 4 && str.substring(1, 4).includes(char)) {
+				alert("Ký tự " + char + " tồn tại trong vị trí thứ 2 đến thứ 4 của chuỗi " + str);
+			} else {
+				alert("Ký tự " + char + " không tồn tại trong vị trí thứ 2 đến thứ 4 của chuỗi " + str);
+			}
+		}
+</script>
+</html>
