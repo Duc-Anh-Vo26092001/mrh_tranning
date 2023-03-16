@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Kiểm tra chuỗi</title>
+</head>
+<body>
+    <p>Nhập chuỗi:</p>
+    <input type="text" id="inputString">
+    <button onclick="checkString()">Kiểm tra</button>
+    <p id="result"></p>
+</body>
+<script>
+    function checkString() {
+        const inputString = document.getElementById("inputString").value;
+        const position = 4; // Vị trí của "Script" là 4 (chỉ số 3)
+
+        if (inputString.length >= position + 5 && inputString.substr(position, 6) === "Script") {
+          document.getElementById("result").innerHTML = "Chuỗi không có 'Script'.";
+        } else {
+          document.getElementById("result").innerHTML = "Chuỗi gốc.";
+        }
+      }
+</script>
+</html>
