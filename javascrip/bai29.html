@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra giá trị trong phạm vi 50..99</title>
+</head>
+<body>
+    <h1>Kiểm tra giá trị trong phạm vi 50..99</h1>
+    <p>Nhập ba giá trị số nguyên:</p>
+    <input type="text" id="a" placeholder="Giá trị 1"><br>
+    <input type="text" id="b" placeholder="Giá trị 2"><br>
+    <input type="text" id="c" placeholder="Giá trị 3"><br>
+    <button onclick="kiemTraGiaTri()">Kiểm tra</button>
+    <p id="ket-qua"></p>
+</body>
+<script>
+     function kiemTraGiaTri() {
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c = parseInt(document.getElementById("c").value);
+
+        if ((a >= 50 && a <= 99) || (b >= 50 && b <= 99) || (c >= 50 && c <= 99)) {
+          document.getElementById("ket-qua").innerHTML = "Có ít nhất một giá trị nằm trong phạm vi 50..99.";
+        } else {
+          document.getElementById("ket-qua").innerHTML = "Không có giá trị nào nằm trong phạm vi 50..99.";
+        }
+      }
+</script>
+</html>
