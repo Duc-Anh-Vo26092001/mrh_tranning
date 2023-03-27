@@ -484,7 +484,7 @@ li{
 }
 .product-info .product-name{
    height: 40px;
-   padding-bottom: 48px;
+   padding-bottom: 40px;
 }
 .product-info .new-product-label{
     color :darkgoldenrod;
@@ -599,4 +599,24 @@ footer{
 .container-small{
     display: block;
     padding-left: 15px;
+}
+.footer .icon-logomaiam{
+    background-position: -177px -205px;
+    width: 96px;
+    height: 20px;
+    display: block;
+}
+.footer .icon-logothegioidd{
+    background-position: -125px -131px;
+    width: 108px;
+    height: 25px;
+    display: block;
+    margin-top: -20px;
+}
+.footer .icon-logobachoaxanh{
+    background-position: 0 -131px;
+    width: 111px;
+    height: 25px;
+    display: block;
+    margin-top: -24px;
 }
